@@ -9,7 +9,7 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.green,
         title: Text(
-          "Home Page",
+          "Menu Utama",
           style: TextStyle(color: Colors.white),
         ),
       ),
@@ -26,7 +26,8 @@ class HomePage extends StatelessWidget {
 
 class CustomMenu extends StatelessWidget {
   const CustomMenu({
-  , required this.imageAssets, required this.title});
+    super.key, required this.imageAssets, required this.title,
+  });
   final String imageAssets;
   final String title;
 
