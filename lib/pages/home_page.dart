@@ -14,7 +14,7 @@ class HomePage extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.amberAccent,
         title: Text(
-          "Menu Utama",
+          "Bangun Datar",
           style: TextStyle(color: Colors.black),
         ),
       ),
