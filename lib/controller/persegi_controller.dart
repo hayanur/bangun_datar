@@ -7,12 +7,12 @@ class PersegiController extends GetxController{
 
   void hitungLuas(){
     int hitung = sisi * sisi;
-    hasil.value = "Hasil perhitungan luasnya adalah $sisi x $sisi = $hitung";
+    hasil.value = "Hasil perhitungan luasnya adalah $sisi x $sisi = $hitung cm2";
     isHitungLuas.value = true;
   }
   void hitungKeliling(){
     int hitung = 4 * sisi;
-    hasil.value = "Hasil perhitungan kelilingnya adalah $sisi x 4 = $hitung";
+    hasil.value = "Hasil perhitungan kelilingnya adalah $sisi x 4 = $hitung cm";
     isHitungLuas.value = false;
   }
 }

@@ -1,4 +1,7 @@
+import 'package:bangun_datar_appp/pages/jajargenjang_page.dart';
 import 'package:bangun_datar_appp/pages/persegi_page.dart';
+import 'package:bangun_datar_appp/pages/persegipanjang_page.dart';
+import 'package:bangun_datar_appp/pages/segitiga_page.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
@@ -9,7 +12,7 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        backgroundColor: Colors.purpleAccent,
+        backgroundColor: Colors.amberAccent,
         title: Text(
           "Menu Utama",
           style: TextStyle(color: Colors.black),
@@ -24,6 +27,27 @@ class HomePage extends StatelessWidget {
               },
               child: CustomMenu(
                   imageAssets: "assets/persegi.png", title: "Persegi")),
+          InkWell(
+              onTap: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => PersegipanjangPage()));
+              },
+              child: CustomMenu(
+                  imageAssets: "assets/2.png", title: "Persegi Panjang")),
+          InkWell(
+              onTap: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => SegitigaPage()));
+              },
+              child: CustomMenu(
+                  imageAssets: "assets/segitiga.png", title: "Segitiga")),
+          InkWell(
+              onTap: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => JajargenjangPage()));
+              },
+              child: CustomMenu(
+                  imageAssets: "assets/jajargenjang.png", title: "Jajar Genjang")),
           Row(
             children: [
               Expanded(
