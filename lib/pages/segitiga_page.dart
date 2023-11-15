@@ -43,7 +43,7 @@ class SegitigaPage extends StatelessWidget {
                   fillColor: Colors.white,
                   filled: true,
                   labelText: "Alas",
-                  hintText: "Masukkan Alas",
+                  hintText: "Masukkan Alas (cm)",
                   hintStyle: TextStyle(color: Colors.grey.shade400),
                   contentPadding:
                   EdgeInsets.symmetric(vertical: 4, horizontal: 8),
@@ -69,7 +69,7 @@ class SegitigaPage extends StatelessWidget {
                   fillColor: Colors.white,
                   filled: true,
                   labelText: "Tinggi",
-                  hintText: "Masukkan Tinggi",
+                  hintText: "Masukkan Tinggi (cm)",
                   hintStyle: TextStyle(color: Colors.grey.shade400),
                   contentPadding:
                   EdgeInsets.symmetric(vertical: 4, horizontal: 8),
@@ -95,7 +95,7 @@ class SegitigaPage extends StatelessWidget {
                   fillColor: Colors.white,
                   filled: true,
                   labelText: "Sisi Miring Segitiga",
-                  hintText: "Masukkan Sisi Miring Segitiga",
+                  hintText: "Masukkan Sisi Miring Segitiga (cm)",
                   hintStyle: TextStyle(color: Colors.grey.shade400),
                   contentPadding:
                   EdgeInsets.symmetric(vertical: 4, horizontal: 8),

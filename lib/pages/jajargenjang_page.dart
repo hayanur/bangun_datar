@@ -31,7 +31,7 @@ class JajargenjangPage extends StatelessWidget {
           Padding(
             padding: const EdgeInsets.all(10.0),
             child: Text(
-                "Segitiga merupakan bangun datar yang dibatasi dengan adanya tiga buah sisi serta memiliki tiga buah titik sudut."),
+                "Jajar genjang merupakan bangun datar dua dimensi yang jika dilihat dari bentuknya hampir seperti segi empat yang memiliki dua rusuk sejajar serta saling berhadapan."),
           ),
           Padding(
             padding: const EdgeInsets.all(10.0),
@@ -44,7 +44,7 @@ class JajargenjangPage extends StatelessWidget {
                   fillColor: Colors.white,
                   filled: true,
                   labelText: "Alas",
-                  hintText: "Masukkan Alas",
+                  hintText: "Masukkan Alas (cm)",
                   hintStyle: TextStyle(color: Colors.grey.shade400),
                   contentPadding:
                   EdgeInsets.symmetric(vertical: 4, horizontal: 8),
@@ -70,7 +70,7 @@ class JajargenjangPage extends StatelessWidget {
                   fillColor: Colors.white,
                   filled: true,
                   labelText: "Tinggi",
-                  hintText: "Masukkan Tinggi",
+                  hintText: "Masukkan Tinggi (cm)",
                   hintStyle: TextStyle(color: Colors.grey.shade400),
                   contentPadding:
                   EdgeInsets.symmetric(vertical: 4, horizontal: 8),
@@ -96,7 +96,7 @@ class JajargenjangPage extends StatelessWidget {
                   fillColor: Colors.white,
                   filled: true,
                   labelText: "Sisi Miring Jajargenjang",
-                  hintText: "Masukkan Sisi Miring Jajargenjang",
+                  hintText: "Masukkan Sisi Miring Jajargenjang (cm)",
                   hintStyle: TextStyle(color: Colors.grey.shade400),
                   contentPadding:
                   EdgeInsets.symmetric(vertical: 4, horizontal: 8),

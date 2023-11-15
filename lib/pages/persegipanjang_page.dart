@@ -44,7 +44,7 @@ class PersegipanjangPage extends StatelessWidget {
                   fillColor: Colors.white,
                   filled: true,
                   labelText: "Panjang",
-                  hintText: "Masukkan Panjang",
+                  hintText: "Masukkan Panjang (cm)",
                   hintStyle: TextStyle(color: Colors.grey.shade400),
                   contentPadding:
                   EdgeInsets.symmetric(vertical: 4, horizontal: 8),
@@ -70,7 +70,7 @@ class PersegipanjangPage extends StatelessWidget {
                   fillColor: Colors.white,
                   filled: true,
                   labelText: "Lebar",
-                  hintText: "Masukkan Lebar",
+                  hintText: "Masukkan Lebar (cm)",
                   hintStyle: TextStyle(color: Colors.grey.shade400),
                   contentPadding:
                   EdgeInsets.symmetric(vertical: 4, horizontal: 8),

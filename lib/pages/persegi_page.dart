@@ -44,7 +44,7 @@ class PersegiPage extends StatelessWidget {
                   fillColor: Colors.white,
                   filled: true,
                   labelText: "Sisi",
-                  hintText: "Masukkan Sisi",
+                  hintText: "Masukkan Sisi (cm)",
                   hintStyle: TextStyle(color: Colors.grey.shade400),
                   contentPadding:
                       EdgeInsets.symmetric(vertical: 4, horizontal: 8),
