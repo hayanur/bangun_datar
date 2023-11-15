@@ -1,3 +1,4 @@
+import 'package:bangun_datar_appp/pages/persegi_page.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
@@ -7,17 +8,35 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.green,
+        centerTitle: true,
+        backgroundColor: Colors.purpleAccent,
         title: Text(
           "Menu Utama",
-          style: TextStyle(color: Colors.white),
+          style: TextStyle(color: Colors.black),
         ),
       ),
-      body: Column(
+      body: ListView(
         children: [
-          CustomMenu(imageAssets: "assets/persegi.png",title: "Persegi"),
-          CustomMenu(imageAssets: "assets/jajargenjang.png",title: "Jajar Genjang"),
-          CustomMenu(imageAssets: "assets/segitiga.png",title: "Segitiga"),
+          InkWell(
+              onTap: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => PersegiPage()));
+              },
+              child: CustomMenu(
+                  imageAssets: "assets/persegi.png", title: "Persegi")),
+          Row(
+            children: [
+              Expanded(
+                  child: CustomMenu(
+                      imageAssets: "assets/segitiga.png", title: "Segitiga")),
+              Expanded(
+                  child: CustomMenu(
+                      imageAssets: "assets/segitiga.png", title: "Segitiga")),
+              Expanded(
+                  child: CustomMenu(
+                      imageAssets: "assets/segitiga.png", title: "Segitiga")),
+            ],
+          ),
         ],
       ),
     );
@@ -26,8 +45,11 @@ class HomePage extends StatelessWidget {
 
 class CustomMenu extends StatelessWidget {
   const CustomMenu({
-    super.key, required this.imageAssets, required this.title,
+    super.key,
+    required this.imageAssets,
+    required this.title,
   });
+
   final String imageAssets;
   final String title;
 
